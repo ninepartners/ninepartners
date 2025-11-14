@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>株式会社NINE PARTNERS — 中小企業向けの伴走型IT支援</title>
+  <meta name="description" content="中小企業・零細企業向けの伴走型IT支援。DX支援（業務システム開発・HP制作・IT導入）、補助金・助成金の制度申請支援、営業・業務改善・事業承継などの経営支援をワンストップで提供します." />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8fbff;
+      --primary-500:#0b6ef6;
+      --primary-700:#0456d1;
+      --muted:#6b7280;
+      --card:#ffffff;
+      font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#0f1724;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .site-header{position:sticky;top:0;z-index:60;backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.84), rgba(255,255,255,0.74));border-bottom:1px solid rgba(10,20,40,0.05);} 
+    .nav{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px;} 
+    .brand{display:flex;align-items:center;gap:12px} 
+    .logo{width:56px;height:56px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;background:transparent;box-shadow:0 6px 18px rgba(11,110,246,0.08);} 
+    .logo img{width:100%;height:100%;object-fit:cover;display:block} 
+    .site-title{font-weight:700;font-size:16px} 
+    .nav-links{display:flex;gap:18px;align-items:center} 
+    .nav-links a{color:var(--muted);font-weight:600} 
+    .cta{background:var(--primary-500);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;box-shadow:0 8px 22px rgba(11,110,246,0.12)} 
+    .hero{max-width:1100px;margin:28px auto;padding:28px} 
+    .hero-inner{background:linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:16px;box-shadow: 0 12px 40px rgba(8,30,80,0.06);} 
+    .hero h1{margin:0;font-size:28px;color:var(--primary-700)} 
+    .lead{margin:0;color:var(--muted);max-width:720px} 
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px} 
+    .btn-secondary{padding:10px 14px;border-radius:10px;background:#eef6ff;color:var(--primary-700);font-weight:700} 
+    .hero-media{margin-top:12px;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,var(--primary-500),var(--primary-700));min-height:160px;display:flex;align-items:center;justify-content:center;color:white} 
+    .hero-media img{width:100%;height:100%;object-fit:cover;display:block} 
+    section{max-width:1100px;margin:36px auto;padding:18px} 
+    .section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px} 
+    .section-head h2{margin:0;font-size:20px;color:var(--primary-700)} 
+    .muted{color:var(--muted);font-size:14px} 
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} 
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(12,30,60,0.04)} 
+    .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px} 
+    .case{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;overflow:hidden;box-shadow:0 8px 22px rgba(10,20,60,0.04)} 
+    .case img{width:100%;height:140px;object-fit:cover;display:block} 
+    .case .body{padding:12px} 
+    .company{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap} 
+    .contact-card{background:linear-gradient(180deg,#fff,#f6fbff);padding:18px;border-radius:12px} 
+    .contact-card a{display:inline-block;background:var(--primary-500);color:#fff;padding:10px 14px;border-radius:10px} 
+    .quote{background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(10,25,60,0.04);font-style:italic} 
+    @media (max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.cases-grid{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.hero{padding:16px}.hero h1{font-size:22px}} 
+    @media (max-width:600px){.cards{grid-template-columns:1fr}.cases-grid{grid-template-columns:1fr}.hero-media{min-height:180px}.nav{padding:10px}.brand .site-title{display:none}} 
+  </style>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="nav">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <img src="images/logo.png" alt="株式会社NINE PARTNERS ロゴ" onerror="this.style.display='none'">
+      </div>
+      <div class="site-title">株式会社NINE PARTNERS</div>
+    </div>
+    <nav class="nav-links" role="navigation" aria-label="サイト内リンク">
+      <a href="#home">ホーム</a>
+      <a href="#services">事業紹介</a>
+      <a href="#cases">事例</a>
+      <a href="#representative">代表メッセージ</a>
+      <a href="#company">会社情報</a>
+      <a href="#contact" class="cta">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="hero" aria-labelledby="home-title">
+    <div class="hero-inner">
+      <div>
+        <h1 id="home-title">「人に寄り添うIT」で現場が笑顔になる仕組みを</h1>
+        <p class="lead">中小・零細企業向けに、使えるITの導入・運用・定着支援を行います。補助金・助成金や経営支援を組み合わせたトータルサポートで、現場に根ざした改善を実現します。</p>
+        <div class="hero-actions">
+          <a href="#services" class="cta">事業紹介を見る</a>
+          <a href="#contact" class="btn-secondary">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/hero.jpg" alt="オフィスで相談しているイメージ" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (事業紹介) -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="section-head">
+      <h2 id="services-title">事業紹介</h2>
+      <p class="muted">企画・導入・運用・定着までワンストップで支援します</p>
+    </div>
+
+    <div class="cards" aria-hidden="false">
+      <article class="card">
+        <h3>DX支援事業</h3>
+        <p class="muted">業務システムの開発・運用保守、ホームページ作成・運用保守、ITサービス／機器の導入支援を提供します。現場に馴染む運用を重視し、導入後の定着化まで伴走します。</p>
+        <p class="muted" style="margin-top:8px"><strong>例：</strong>受注管理システム、勤怠・給与連携、EC導入、社内ポータル等</p>
+      </article>
+
+      <article class="card">
+        <h3>制度申請支援事業</h3>
+        <p class="muted">助成金（厚労省管轄）・補助金（経産省／地方自治体管轄）などの申請支援を行います。制度選定から申請書作成、採択後の実行支援までサポートします。</p>
+        <p class="muted" style="margin-top:8px"><strong>例：</strong>IT導入補助金、ものづくり補助金、人材関連の助成金 など</p>
+      </article>
+
+      <article class="card">
+        <h3>経営支援</h3>
+        <p class="muted">営業請負、業務改善支援、事業承継まで、ITと経営の両面から支援します。M&A・事業承継経験を活かした実行支援を提供します。</p>
+        <p class="muted" style="margin-top:8px"><strong>例：</strong>営業体制の立ち上げ、業務フロー再設計、M&A後の統合支援</p>
+      </article>
+    </div>
+
+    <div style="margin-top:18px">
+      <h3 style="margin-bottom:8px">支援の流れ（例）</h3>
+      <div class="card" style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:180px">
+          <strong>1. ヒアリング</strong>
+          <p class="muted">現状の業務・課題を丁寧に伺い、優先度を整理します。</p>
+        </div>
+        <div style="flex:1;min-width:180px">
+          <strong>2. 施策設計・申請支援</strong>
+          <p class="muted">最小限で効果が出る設計と、必要であれば補助金・助成金の適用を検討し申請を支援します。</p>
+        </div>
+        <div style="flex:1;min-width:180px">
+          <strong>3. 導入・教育・運用支援</strong>
+          <p class="muted">導入後の運用設計と教育で現場に根付かせ、定着化を図ります。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="muted" style="margin-top:12px">※ 製品や外注先に縛られず、補助金・制度の活用やM&A後の統合支援など広く対応します。まずはお気軽にご相談ください。</p>
+  </section>
+
+  <!-- Cases (事例) -->
+  <section id="cases" aria-labelledby="cases-title">
+    <div class="section-head">
+      <h2 id="cases-title">事例</h2>
+      <p class="muted">一部の導入事例をご紹介します（概要）</p>
+    </div>
+    <div class="cases-grid">
+      <article class="case">
+        <img src="images/case1.jpg" alt="事例：業務効率化のイメージ" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>業務効率化プロジェクト（製造業）</h3>
+          <p class="muted">現場ヒアリング〜システム導入・運用で工数を大幅削減。段階的改善で定着させました。</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <img src="images/case2.jpg" alt="事例：サービス立ち上げのイメージ" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>新規サービス立ち上げ支援（小売）</h3>
+          <p class="muted">要件整理→小さなPoCから本番導入、マーケ支援まで併走。</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <img src="images/case3.jpg" alt="事例：ブランド刷新のイメージ" onerror="this.style.display='none'">
+        <div class="body">
+          <h3>ブランド刷新・DX支援（サービス業）</h3>
+          <p class="muted">業務フロー再設計と顧客対応のデジタル化で問合せ増加を実現。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Representative (代表メッセージ) -->
+  <section id="representative" aria-labelledby="rep-title">
+    <div class="section-head">
+      <h2 id="rep-title">代表メッセージ</h2>
+      <p class="muted">代表の経験と想い</p>
+    </div>
+
+    <div class="card">
+      <p><strong>経歴（抜粋）</strong></p>
+      <ul class="muted">
+        <li>2018年4月 大手ITシステム・ツール商社（大塚商会）入社。営業として実績を積み、4年目に若手営業年間レースで1位を獲得。</li>
+        <li>その後、日本M&Aセンターに転職。M&Aコンサルタントとして様々な業種・ビジネスモデルに関わる。</li>
+        <li>中小企業の現場での課題を深く理解し、「もっと柔軟で寄り添う支援」を目指して当社を設立。</li>
+      </ul>
+
+      <div style="margin-top:12px">
+        <p class="quote">「難しいITではなく、人に寄り添うITを。まずは便利だと感じていただくことが大切です。使い続けられる仕組みを一緒に作ります。」</p>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4>代表の方針（短く）</h4>
+        <ul class="muted">
+          <li>製品ありきではなく、課題ありきで最小限の投資で最大の効果を目指す。</li>
+          <li>補助金・制度の活用を含めたトータル支援。</li>
+          <li>定着化まで伴走し、必要があれば卒業してもらうまで支援を続ける。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Company -->
+  <section id="company" aria-labelledby="company-title">
+    <div class="section-head">
+      <h2 id="company-title">会社情報</h2>
+      <p class="muted">株式会社NINE PARTNERS</p>
+    </div>
+    <div class="company">
+      <div style="flex:1;min-width:220px">
+        <div class="card">
+          <h3>会社名</h3><p class="muted">株式会社NINE PARTNERS</p>
+          <h3 style="margin-top:12px">所在地</h3><p class="muted">東京都（サンプル住所）</p>
+        </div>
+      </div>
+      <div style="min-width:260px">
+        <div class="contact-card">
+          <h3>連絡先</h3>
+          <p class="muted">メール: info@ninepartners.example</p>
+          <p class="muted">電話: 03-0000-0000</p>
+          <p style="margin-top:10px"><a href="mailto:info@ninepartners.example" class="cta">メールでお問い合わせ</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="section-head">
+      <h2 id="contact-title">お問い合わせ</h2>
+      <p class="muted">ご相談やお見積りは下記からご連絡ください</p>
+    </div>
+
+    <div class="card">
+      <p class="muted">メールでのご相談を受け付けています。フォーム設置（Formspree等）をご希望の場合は設定もサポートします。</p>
+      <p style="margin-top:12px"><a href="mailto:info@ninepartners.example?subject=お問い合わせ%20from%20website" class="cta">メールでお問い合わせ</a></p>
+    </div>
+  </section>
+
+  <footer style="padding:20px 0;text-align:center;color:var(--muted);font-size:14px">© <span id="year"></span> 株式会社NINE PARTNERS</footer>
+</main>
+
+<!-- 構造化データ（簡易：Organization + services） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "株式会社NINE PARTNERS",
+  "url": "https://ninepartners.github.io",
+  "logo": "https://ninepartners.github.io/images/logo.png",
+  "description": "中小企業向けの伴走型IT支援。DX支援、制度申請支援、経営支援をワンストップで提供します.",
+  "department": [
+    {
+      "@type": "Organization",
+      "name": "DX支援事業",
+      "description": "業務システムの開発・運用保守、ホームページ作成・運用保守、ITサービス/機器導入支援"
+    },
+    {
+      "@type": "Organization",
+      "name": "制度申請支援事業",
+      "description": "助成金（厚労省管轄）、補助金（経産省/地方自治体管轄）の申請支援"
+    },
+    {
+      "@type": "Organization",
+      "name": "経営支援",
+      "description": "営業請負、業務改善支援、事業承継支援"
+    }
+  ]
+}
+</script>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
